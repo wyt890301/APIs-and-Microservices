@@ -2,7 +2,7 @@
 
 <html>
    <head>
-      <title>Timestamp Microservice | freeCodeCamp.org</title>
+      <title>APIs and Microservice Project</title>
       <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="style.css" rel="stylesheet" type="text/css">
@@ -22,11 +22,33 @@
       <p>
         <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
       </p>
-    </div>
-    <div class="footer">
+    </div><br><br>
+    <div class="container">
+      <h1>Request Header Parser Microservice</h1>
+      <hr />
+      <h3>Example Usage:</h3>
       <p>
-        By <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+        <a href="api/whoami">[base url]/api/whoami</a>
       </p>
-    </div>
+
+      <h3>Example Output:</h3>
+      <p>
+        <code>{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
+      </p>
+    </div><br><br>
+    <h1>URL Shortener Microservice</h1>
+    <hr />
+	<main>
+		<section>
+			<form action="/api/shorturl/new" method="POST">
+				<fieldset>
+					<legend>URL Shortener</legend>
+					<label for="url_input">URL:</label>
+            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
+            <input type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+      </section>
+    </main><br><br>
   </body>
 </html>
