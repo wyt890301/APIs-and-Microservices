@@ -89,7 +89,8 @@ app.post('/api/shorturl/new', function (req, res) {
   //建立新的urlSchema
   let urlRespone = req.body.url;
   let shortUrl = shortId.generate();
-  if(validUrl.isUri(urlRespone)){
+  //測試是否為有效網址
+  if(validUrl.isWebUri(urlRespone)){
     let responseUrl = new URL({ 
       original_url: urlRespone,
       short_url: shortUrl
